@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Anderson Yeo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <script src="js/script.js" defer></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+
   </head>
 
   <body>
@@ -26,10 +31,10 @@
         <img src="formal.png" alt="anderson profile img">
         <h2>Hello!</h2>
         <p class="intro">
-          I am currently a student at Universiti Malaysia Sarawak, studying Computational Science. I was born and raised in Kuching, 
+          I am currently a student at Universiti Malaysia Sarawak, studying Computational Science. I was born and raised in Kuching,
           Sarawak, where I developed a strong interest in the ways technology affects our day-to-day lives.
           <br><br>
-          Working out is like my own personal drug – I can't go more than a few days without training or exercising. I started working 
+          Working out is like my own personal drug – I can't go more than a few days without training or exercising. I started working
           out at the age of 15 and have been committed to it ever since, mainly focused on building an aesthetic body.
         </p>
       </div>
@@ -40,11 +45,11 @@
           <img class="hacking-gif" src="https://media.tenor.com/5ry-200hErMAAAAd/hacker-hacker-man.gif" alt="hacking img">
           <h3>Design, Development & Hacking</h3>
           <p>
-            After completing my STPM studies, I decided to pick up coding as a new skill before entering university. My journey began with Python, and later, 
-            I dabbled with other languages such as C, C++, HTML, and CSS. But coding was not the only thing that piqued my interest. I also explored 
-            various hacking skills, particularly in network hacking. Tools like aircrack-ng, Wireshark, and Wifite, which I frequently use in Kali Linux, 
-            gave me a sense of empowerment to take on challenges like attacking a WiFi network or kicking someone out from a network. However, with great 
-            power comes great responsibility. It is crucial to remember that these skills should only be used ethically and with proper authorization. 
+            After completing my STPM studies, I decided to pick up coding as a new skill before entering university. My journey began with Python, and later,
+            I dabbled with other languages such as C, C++, HTML, and CSS. But coding was not the only thing that piqued my interest. I also explored
+            various hacking skills, particularly in network hacking. Tools like aircrack-ng, Wireshark, and Wifite, which I frequently use in Kali Linux,
+            gave me a sense of empowerment to take on challenges like attacking a WiFi network or kicking someone out from a network. However, with great
+            power comes great responsibility. It is crucial to remember that these skills should only be used ethically and with proper authorization.
             Never hack or attack someone's network without their consent.
           </p>
         </div>
@@ -53,9 +58,9 @@
           <img class="workout-gif" src="https://media.tenor.com/hx2WFTViHMUAAAAd/working-out-dwayne-johnson.gif" alt="workout img">
           <h3>Workout Challenge</h3>
           <p>
-            My greatest skill, without a doubt, is working out. No time to hit the gym? Living in a tiny space with limited room for exercise equipment? 
-            Not a problem. I can work out even in the most extreme conditions, as long as I'm alive and kicking. Over time, I've tried and tested a wide 
-            range of workout regimens, including weight lifting, HIIT, Tabata, yoga, aerobics, and more. By dedicating myself to fitness and challenging 
+            My greatest skill, without a doubt, is working out. No time to hit the gym? Living in a tiny space with limited room for exercise equipment?
+            Not a problem. I can work out even in the most extreme conditions, as long as I'm alive and kicking. Over time, I've tried and tested a wide
+            range of workout regimens, including weight lifting, HIIT, Tabata, yoga, aerobics, and more. By dedicating myself to fitness and challenging
             myself on a regular basis, I have become a more resilient, focused, and healthy individual.
           </p>
         </div>
@@ -65,10 +70,18 @@
         <h2>Get In Touch</h2>
         <h3>If you love workout as much as I do.</h3>
         <p class="contact-message">
-          Are you a fitness enthusiast like me? Looking to get fit but not sure where to start? Want tips to stay positive and live a healthier 
-          lifestyle? Let's chat! I'm always here to lend a hand and provide guidance on your fitness journey. So don't hesitate to reach out to me.
+          Are you a fitness enthusiast like me? Looking to get fit but not sure where to start? Want tips to stay positive and live a healthier lifestyle? Let's chat!
         </p>
-        <a class="btn" href="mailto:anderson2002.ay@gmail.com">CONTACT ME</a>
+
+        <!-- Interactive Form -->
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <p id="formResponse"></p>
+        
       </div>
     </div>
 
@@ -76,8 +89,7 @@
       <a class="footer-link" href="https://www.instagram.com/andersonyeo_/">Instagram</a>
       <a class="footer-link" href="https://www.linkedin.com/in/anderson-yeo-jiunn-hee-b02636187/">LinkedIn</a>
       <a class="footer-link" href="https://www.youtube.com/channel/UC3HTPrK-yEgaptfDKXzj6QQ">YouTube</a>
-      <p class="copyright">© 2023 Anderson Yeo Jiunn Hee.</p>
-
+      <p class="copyright">@ 2023 Anderson Yeo Jiunn Hee.</p>
     </div>
 
   </body>

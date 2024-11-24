@@ -134,3 +134,28 @@ a:hover {
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
+form {
+  width: 40%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+}
+
+#formResponse {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
